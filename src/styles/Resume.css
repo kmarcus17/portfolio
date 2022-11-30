@@ -1,0 +1,9 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 85vw;
+  height: 100vh;
+}

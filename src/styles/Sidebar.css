@@ -1,0 +1,20 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap");
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  background-color: linen;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+/* p {
+}
+p:hover {
+  text-decoration: underline;
+} */

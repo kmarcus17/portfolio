@@ -1,0 +1,19 @@
+.dashboard {
+  display: grid;
+  padding-top: 10vh;
+  width: 80vw;
+  grid-template-columns: repeat(auto-fit, 30vw);
+  row-gap: 4vh;
+  column-gap: 4vw;
+  margin-bottom: 3vh;
+  justify-content: center;
+  justify-items: center;
+}
+
+.projectGridItem {
+  width: 25vw;
+  height: 30vh;
+  background-color: rgb(89, 147, 114);
+  color: white;
+  padding: 3px;
+}
