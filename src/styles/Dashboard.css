@@ -1,19 +1,50 @@
 .dashboard {
   display: grid;
-  padding-top: 10vh;
-  width: 80vw;
-  grid-template-columns: repeat(auto-fit, 30vw);
-  row-gap: 4vh;
-  column-gap: 4vw;
-  margin-bottom: 3vh;
+  /* padding-top: 10vh; */
+  width: 100vw;
+  grid-template-columns: repeat(auto-fit, 50vw);
+  row-gap: 0vh;
+  column-gap: 0vw;
+  /* margin-bottom: 3vh; */
   justify-content: center;
+
   justify-items: center;
 }
 
 .projectGridItem {
-  width: 25vw;
-  height: 30vh;
-  background-color: rgb(89, 147, 114);
-  color: white;
+  width: 50vw;
+  height: 50vh;
+  /* background-color: rgb(89, 147, 114); */
+  color: black;
   padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: xx-large;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#development:hover {
+  content: url("https://i.imgur.com/xRvnSDM.png");
+  cursor: pointer;
+}
+
+#ConnectTheSpots:hover {
+  content: url("https://i.imgur.com/N096S8v.png");
+  cursor: pointer;
+}
+
+#responsiveRedesign:hover {
+  content: url("https://i.imgur.com/unBTgqJ.jpg");
+  cursor: pointer;
+}
+
+#personas:hover {
+  content: url("https://i.imgur.com/hqc9XAO.png");
+  cursor: pointer;
 }

@@ -7,7 +7,7 @@ export const showAboutState = atom<boolean>({
 
 export const showDashboardState = atom<boolean>({
   key: "showDashboardState",
-  default: true,
+  default: false,
 });
 
 export const showResumeState = atom<boolean>({

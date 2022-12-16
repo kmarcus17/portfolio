@@ -3,26 +3,32 @@ import logo from "./logo.svg";
 import { RecoilRoot } from "recoil";
 
 import "./App.css";
-import { Sidebar, Dashboard, About, Resume, Contact } from "./components";
+import {
+  Sidebar,
+  Dashboard,
+  About,
+  Resume,
+  Contact,
+  Homepage,
+  NavBar,
+} from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
       <RecoilRoot>
-        <div className="sideBarApp">
-          <Sidebar></Sidebar>
-        </div>
-        <div>
-          <Dashboard></Dashboard>
-        </div>
-        <div>
-          <Contact></Contact>
-        </div>
-        <div>
-          <About></About>
-        </div>
-        <div>
-          <Resume></Resume>
-        </div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<NavBar />}>
+              <Route index element={<Homepage />} />
+              <Route path="about" element={<About />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="projects" element={<Dashboard />} />
+              {/* <Route path="resume" element={<Resume />} /> */}
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </RecoilRoot>
     </div>
   );

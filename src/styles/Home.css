@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@300;400;900&display=swap");
+
+.homePageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30vh;
+  color: white;
+  background-color: black;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 30vh;
+  background: -webkit-linear-gradient(rgb(102, 86, 240), #24d8b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+}

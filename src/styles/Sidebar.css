@@ -1,20 +1,22 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@300;400;900&display=swap");
 
 .sideBar {
   display: flex;
-  flex-direction: column;
-  width: 15vw;
-  background-color: linen;
-  height: 100vh;
+  flex-direction: row;
+  width: 100vw;
+  /* background-color: linen; */
+  /* background-color: #167c80; */
+  /* background-color: #61bfad; */
+  /* background-color: #f9f7e8; */
+
+  background-color: black;
+  /* height: 8vh; */
   align-items: center;
-  justify-content: center;
-  font-family: "Inter", sans-serif;
+  justify-content: space-evenly;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Poppins", sans-serif;
+
   font-weight: 800;
 }
-
-/* p {
-}
-p:hover {
-  text-decoration: underline;
-} */
