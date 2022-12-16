@@ -1,0 +1,23 @@
+.projectCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+
+  padding-left: 6vw;
+  padding-right: 2vw;
+}
+
+.projectCardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCardImage {
+  margin-top: 10vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+
+  border: 3px solid black;
+}

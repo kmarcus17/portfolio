@@ -11,6 +11,10 @@ import {
   Contact,
   Homepage,
   NavBar,
+  Personas,
+  Development,
+  Redesign,
+  ConnectTheSpots,
 } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -25,6 +29,14 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
               <Route path="projects" element={<Dashboard />} />
+              <Route path="projects/personas" element={<Personas />} />
+              <Route path="projects/development" element={<Development />} />
+              <Route
+                path="projects/connectthespots"
+                element={<ConnectTheSpots />}
+              />
+              <Route path="projects/redesign" element={<Redesign />} />
+
               {/* <Route path="resume" element={<Resume />} /> */}
             </Route>
           </Routes>

@@ -5,3 +5,7 @@ export * from "./Resume";
 export * from "./Contact";
 export * from "./Home";
 export * from "./NavBar";
+export * from "./Personas";
+export * from "./Development";
+export * from "./Redesign";
+export * from "./ConnectTheSpots";
