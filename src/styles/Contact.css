@@ -4,11 +4,12 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 85vw;
+  /* width: 85vw; */
   height: 100vh;
+  font-size: 50px;
 }
-
+/* 
 .contact-wrapper {
   display: flex;
   flex-direction: column;
-}
+} */

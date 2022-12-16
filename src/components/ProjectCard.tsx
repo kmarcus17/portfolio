@@ -12,20 +12,29 @@ export const ProjectCard = (props: IProjectCardProps): JSX.Element => {
   return (
     <div className="projectCard">
       <div className="projectCardInfo">
-        <p style={{ fontSize: "60px", marginBottom: "0px" }}>
+        {/* <p style={{ fontSize: "60px", marginBottom: "0px" }}>
           <b>{title}</b>
-        </p>
+        </p> */}
+        <h1 style={{ fontSize: "60px", marginBottom: "0px" }}>{title}</h1>
         <p style={{ fontSize: "22px" }}>
           <i>Prompt: {prompt}</i>
         </p>
-        <p style={{ fontSize: "22px" }}>{description}</p>
-        <p style={{ fontSize: "22px" }}>
-          Check It Out{" "}
-          <a href={contentUrl} target="_blank">
-            Here
-          </a>
-          :
-        </p>
+        <p style={{ fontSize: "20px" }}>{description}</p>
+        {contentUrl != "" && (
+          <div>
+            <p style={{ fontSize: "22px" }}>
+              Check It Out{" "}
+              <a
+                href={contentUrl}
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                Here
+              </a>
+              :
+            </p>
+          </div>
+        )}
       </div>
       <div className="projectCardImage">
         <img src={imgUrl} width={750} />

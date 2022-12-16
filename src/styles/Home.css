@@ -2,9 +2,11 @@
 
 .homePageDiv {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: 30vh;
+  align-items: flex-start;
+  /* font-size: 30vh; */
+  padding-left: 4vw;
   color: white;
   background-color: black;
   height: 100vh;
@@ -13,12 +15,30 @@
 
 h1 {
   font-size: 30vh;
+  margin: 0px;
+  padding: 0px;
   background: -webkit-linear-gradient(rgb(102, 86, 240), #24d8b7);
+  /* background: -webkit-linear-gradient(#c8efd3, #015e25); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.homepage {
+.welcomeHomePage {
+  width: 90vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 7vh;
+}
+
+h3 {
+  font-size: 7vh;
+  background: -webkit-linear-gradient(rgb(102, 86, 240), #24d8b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }

@@ -11,34 +11,11 @@ export const Dashboard = (): JSX.Element => {
   return (
     <div className="dashboard-wrapper">
       <div className="dashboard">
-        <Link to="/projects/personas">
-          <div
-            className="projectGridItem"
-            id="personas"
-            style={{ backgroundColor: "#DEF5E5" }}
-          >
-            <p>
-              <b>Personas</b>
-            </p>
-          </div>
-        </Link>
-        <Link to="/projects/redesign">
-          <div
-            className="projectGridItem"
-            id="responsiveRedesign"
-            style={{ backgroundColor: "#BCEAD5" }}
-          >
-            <p>
-              {" "}
-              <b>Responsive Redesign</b>
-            </p>
-          </div>
-        </Link>
-        <Link to="/projects/development">
+        <Link to="/projects/development" style={{ textDecoration: "none" }}>
           <div
             className="projectGridItem"
             id="development"
-            style={{ backgroundColor: "#9ED5C5" }}
+            style={{ backgroundColor: "#CFF5E7" }}
           >
             <p>
               {" "}
@@ -46,15 +23,40 @@ export const Dashboard = (): JSX.Element => {
             </p>
           </div>
         </Link>
-        <Link to="/projects/connectthespots">
+        <Link to="/projects/connectthespots" style={{ textDecoration: "none" }}>
           <div
             className="projectGridItem"
             id="ConnectTheSpots"
-            style={{ backgroundColor: "#8EC3B0" }}
+            style={{ backgroundColor: "#A0E4CB" }}
+            // style={{ backgroundColor: "#8EC3B0" }}
           >
             <p>
               {" "}
               <b>ConnectTheSpots</b>
+            </p>
+          </div>
+        </Link>
+
+        <Link to="/projects/personas" style={{ textDecoration: "none" }}>
+          <div
+            className="projectGridItem"
+            id="personas"
+            style={{ backgroundColor: "#59C1BD" }}
+          >
+            <p>
+              <b>Personas</b>
+            </p>
+          </div>
+        </Link>
+        <Link to="/projects/redesign" style={{ textDecoration: "none" }}>
+          <div
+            className="projectGridItem"
+            id="responsiveRedesign"
+            style={{ backgroundColor: "#0D4C92" }}
+          >
+            <p>
+              {" "}
+              <b>Responsive Redesign</b>
             </p>
           </div>
         </Link>
