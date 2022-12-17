@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/ProjectCard.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 export interface IProjectCardProps {
   title: string;
   description: string;
@@ -36,9 +38,15 @@ export const ProjectCard = (props: IProjectCardProps): JSX.Element => {
           </div>
         )}
       </div>
-      <div className="projectCardImage">
-        <img src={imgUrl} width={750} />
-      </div>
+      <Carousel>
+        <div className="projectCardImage">
+          <img src={imgUrl} width={650} />
+        </div>
+        <div className="projectCardCarosel">
+          <p>Hello</p>
+          <p>Design Considered</p>
+        </div>
+      </Carousel>
     </div>
   );
 };

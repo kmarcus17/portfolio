@@ -3,13 +3,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh;
-
   padding-left: 6vw;
-  padding-right: 2vw;
+  /* padding-right: 2vw; */
 }
 
 .projectCardInfo {
+  margin-top: 7vh;
   display: flex;
   flex-direction: column;
 }
@@ -20,4 +19,9 @@
   margin-right: 3vw;
 
   border: 3px solid black;
+}
+
+.projectCardCarosel {
+  padding-top: 0;
+  /* border: 3px solid black; */
 }
