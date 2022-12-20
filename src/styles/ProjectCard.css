@@ -25,3 +25,7 @@
   padding-top: 0;
   /* border: 3px solid black; */
 }
+
+.carouselDiv {
+  width: 70vw;
+}

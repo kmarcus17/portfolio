@@ -3,7 +3,7 @@ import React from "react";
 import { ProjectCard } from "./ProjectCard";
 export const Redesign = (): JSX.Element => {
   const descriptionText =
-    "Millions of people everyday pay with credit or debit cards. The cards and card readers have evolved over time, and now offer many different ways to pay. One very common credit card machine Interface, described below, is used frequently. For this project, I define two personas using research I collected through observation and interviews. I propose a storyboard portraying the process of using a card machine at the CVS on Thayer Street.";
+    "For my UI/UX class, we were tasked with practicing the workflow of redesigning a simple website. I chose a restaurant in my hometown because I always thought its website was difficult to use and hard on the eyes. I picked the home page of their website and analyzed it based on usability and accessibility standards. I then redesigned and built a new version of this webpage.";
   const promptText =
     "The goal of this assignment is for you to practice the workflow of redesigning a simple website. You should take away the skills necessary to analyze and identify flaws in an existing interface, create low-fidelity and high-fidelity prototypes for various screen sizes, and build a responsive website based on those prototypes.";
   return (
@@ -11,8 +11,14 @@ export const Redesign = (): JSX.Element => {
       title={"Redesign"}
       description={descriptionText}
       imgUrl={"https://i.imgur.com/unBTgqJ.jpg"}
-      contentUrl={"https://young-eyrie-18271.herokuapp.com/"}
+      contentUrl={"https://lit-stream-02003.herokuapp.com/home.html"}
       prompt={promptText}
+      // imgUrl2={"https://imgur.com/ByZQvGS.jpg"}
+      imgUrl2={"https://imgur.com/wUugScU.jpg"}
+      imgUrl3={"https://imgur.com/ftU3UBS.jpg"}
+      imgUrl4={"https://imgur.com/sJLMhiv.jpg"}
+      imgUrl5={"https://imgur.com/W23VUVo.jpg"}
+      imgUrl6={"https://imgur.com/I2mlLeA.jpg"}
     ></ProjectCard>
   );
 };

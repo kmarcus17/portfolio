@@ -8,9 +8,28 @@ export interface IProjectCardProps {
   imgUrl: string;
   contentUrl: string;
   prompt: string;
+  imgUrl2?: string;
+  imgUrl3?: string;
+  imgUrl4?: string;
+  imgUrl5?: string;
+  imgUrl6?: string;
 }
 export const ProjectCard = (props: IProjectCardProps): JSX.Element => {
-  const { title, description, imgUrl, contentUrl, prompt } = props;
+  const {
+    title,
+    description,
+    imgUrl,
+    contentUrl,
+    prompt,
+    imgUrl2,
+    imgUrl3,
+    imgUrl4,
+    imgUrl5,
+    imgUrl6,
+  } = props;
+
+  // const imgLength = imgUrl5?.length ?? 0;
+  // const image5: boolean = imgLength !== 0;
   return (
     <div className="projectCard">
       <div className="projectCardInfo">
@@ -37,16 +56,66 @@ export const ProjectCard = (props: IProjectCardProps): JSX.Element => {
             </p>
           </div>
         )}
+        {contentUrl == "" && (
+          <div>
+            <p style={{ fontSize: "22px" }}>
+              This project hasn't been deployed yet!
+            </p>
+            {/* <p style={{ fontSize: "22px" }}>Hopefully it is in the future! </p> */}
+          </div>
+        )}
       </div>
-      <Carousel>
-        <div className="projectCardImage">
-          <img src={imgUrl} width={650} />
-        </div>
-        <div className="projectCardCarosel">
-          <p>Hello</p>
-          <p>Design Considered</p>
-        </div>
-      </Carousel>
+      <div className="carouselDiv">
+        <Carousel>
+          <div className="projectCardImage">
+            <img src={imgUrl} width={650} />
+          </div>
+          <div className="projectCardImage">
+            <img src={imgUrl2} width={650} />
+          </div>
+
+          <div className="projectCardImage">
+            <img src={imgUrl3} width={650} />
+          </div>
+          <div className="projectCardImage">
+            <img src={imgUrl4} width={650} />
+          </div>
+          <div className="projectCardImage">
+            <img src={imgUrl5} width={650} />
+          </div>
+          <div className="projectCardImage">
+            <img src={imgUrl6} width={650} />
+          </div>
+          {/* <React.Fragment>
+          {imgUrl2 && (
+            <div className="projectCardImage">
+              <img src={imgUrl2} width={650} />
+            </div>
+          )}
+        </React.Fragment>
+        <React.Fragment>
+          {imgUrl3 && (
+            <div className="projectCardImage">
+              <img src={imgUrl3} width={650} />
+            </div>
+          )}
+        </React.Fragment>
+        <React.Fragment>
+          {imgUrl4 && (
+            <div className="projectCardImage">
+              <img src={imgUrl4} width={650} />
+            </div>
+          )}
+        </React.Fragment>
+        <React.Fragment>
+          {imgUrl5 && (
+            <div className="projectCardImage">
+              <img src={imgUrl5} width={650} />
+            </div>
+          )}
+        </React.Fragment> */}
+        </Carousel>
+      </div>
     </div>
   );
 };
