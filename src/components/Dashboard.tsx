@@ -1,13 +1,10 @@
 import React from "react";
 import "../styles/Dashboard.css";
-import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
-import { showDashboardState } from "../Atoms";
+
 import { NavBar } from "./NavBar";
 import { Outlet, Link } from "react-router-dom";
 
 export const Dashboard = (): JSX.Element => {
-  const showDashboard = useRecoilValue(showDashboardState);
-  console.log(showDashboard);
   return (
     <div className="dashboard-wrapper">
       <div className="dashboard">

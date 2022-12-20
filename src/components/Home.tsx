@@ -1,13 +1,10 @@
 import React from "react";
 import "../styles/Home.css";
-import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
-import { showDashboardState } from "../Atoms";
 import { NavBar } from "./NavBar";
 import { Outlet, Link } from "react-router-dom";
 
 export const Homepage = (): JSX.Element => {
-  // const showDashboard = useRecoilValue(showDashboardState);
-  // console.log(showDashboard);
+
   return (
     <div>
       <div className="homePageDiv">

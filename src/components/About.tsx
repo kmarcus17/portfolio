@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
-import { showAboutState, showDashboardState } from "../Atoms";
+
 import { NavBar } from "./NavBar";
 import { RiPencilRuler2Fill } from "react-icons/ri";
 
