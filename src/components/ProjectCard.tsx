@@ -7,6 +7,7 @@ export interface IProjectCardProps {
   description: string;
   imgUrl: string;
   contentUrl: string;
+  contentUrl2?: string;
   prompt: string;
   imgUrl2?: string;
   imgUrl3?: string;
@@ -26,6 +27,7 @@ export const ProjectCard = (props: IProjectCardProps): JSX.Element => {
     imgUrl4,
     imgUrl5,
     imgUrl6,
+    contentUrl2,
   } = props;
 
   // const imgLength = imgUrl5?.length ?? 0;
@@ -60,6 +62,20 @@ export const ProjectCard = (props: IProjectCardProps): JSX.Element => {
           <div>
             <p style={{ fontSize: "22px" }}>
               This project hasn't been deployed yet!
+            </p>
+          </div>
+        )}
+        {contentUrl2 !== "" && (
+          <div>
+            <p style={{ fontSize: "22px" }}>
+              {" "}
+              <a
+                href={contentUrl2}
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                (<i>Another HyperMedia System I Made</i>)
+              </a>
             </p>
           </div>
         )}

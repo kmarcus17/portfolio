@@ -2,17 +2,29 @@ import React from "react";
 import "../styles/Contact.css";
 
 import { NavBar } from "./NavBar";
-import { RiPencilRuler2Fill } from "react-icons/ri";
+import { RiRainbowFill } from "react-icons/ri";
 
 export const Contact = (): JSX.Element => {
   return (
     <div className="contact">
       <p>
-        This page is <b>under construction</b>
+        Email me at:{" "}
+        <a href="mailto:katherine_marcus@brown.edu">
+          <i>katherine_marcus@brown.edu</i>
+        </a>
       </p>
-      <p>(for anonymity)</p>
       <p>
-        <RiPencilRuler2Fill />
+        Connect with me on{" "}
+        <a
+          href={"https://www.linkedin.com/in/katherine-marcus/"}
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
+          LinkedIn!
+        </a>
+      </p>
+      <p>
+        <RiRainbowFill />
       </p>
     </div>
   );

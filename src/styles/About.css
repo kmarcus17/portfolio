@@ -5,7 +5,50 @@
   align-items: center;
   align-content: center;
   /* height: 100vh; */
+  /* font-size: 42px; */
+}
+
+.about-header {
+  margin-top: 2vh;
+
   font-size: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  /* background: lightgrey; */
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: color 0.3s;
+}
+
+.about-header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #2098d1;
+  /* color:  #2098d1; */
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-out;
+}
+
+.about-header:hover {
+  color: white;
+}
+.about-header:hover:before {
+  transform: scaleX(1);
+}
+
+.about-body {
+  font-size: 40px;
+  margin-top: 7vh;
+  text-align: center;
+  line-height: 1.8;
 }
 /* 
 .about-wrapper {

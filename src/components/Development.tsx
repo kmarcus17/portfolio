@@ -14,6 +14,7 @@ export const Development = (): JSX.Element => {
       description={descriptionText}
       imgUrl={"https://i.imgur.com/xRvnSDM.png"}
       contentUrl={"https://limitless-ridge-25630.herokuapp.com/"}
+      contentUrl2={""}
       prompt={promptText}
       imgUrl2={"https://i.imgur.com/OYCebBP.png"}
       imgUrl3={"https://imgur.com/muD6h7c.jpg"}

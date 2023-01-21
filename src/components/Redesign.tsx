@@ -13,6 +13,7 @@ export const Redesign = (): JSX.Element => {
       imgUrl={"https://i.imgur.com/unBTgqJ.jpg"}
       contentUrl={"https://lit-stream-02003.herokuapp.com/home.html"}
       prompt={promptText}
+      contentUrl2={""}
       // imgUrl2={"https://imgur.com/ByZQvGS.jpg"}
       imgUrl2={"https://imgur.com/wUugScU.jpg"}
       imgUrl3={"https://imgur.com/ftU3UBS.jpg"}

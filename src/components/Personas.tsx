@@ -17,6 +17,7 @@ export const Personas = (): JSX.Element => {
       description={descriptionText}
       imgUrl={"https://i.imgur.com/hqc9XAO.png"}
       contentUrl={"https://sleepy-ocean-62618.herokuapp.com/"}
+      contentUrl2={""}
       prompt={promptText}
       imgUrl2={img2}
       imgUrl3={img3}
