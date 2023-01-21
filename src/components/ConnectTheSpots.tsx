@@ -10,7 +10,7 @@ export const ConnectTheSpots = (): JSX.Element => {
       title={"ConnectTheSpots"}
       description={descriptionText}
       imgUrl={"https://i.imgur.com/N096S8v.png"}
-      contentUrl={""}
+      contentUrl={"https://connect-the-spots-auth.web.app/"}
       prompt={promptText}
       imgUrl2={"https://imgur.com/LvSRgwM.jpg"}
       imgUrl3={"https://imgur.com/Jd7viym.jpg"}

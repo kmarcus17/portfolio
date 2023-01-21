@@ -61,7 +61,6 @@ export const ProjectCard = (props: IProjectCardProps): JSX.Element => {
             <p style={{ fontSize: "22px" }}>
               This project hasn't been deployed yet!
             </p>
-            {/* <p style={{ fontSize: "22px" }}>Hopefully it is in the future! </p> */}
           </div>
         )}
       </div>
